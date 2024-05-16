@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .classroom{
+            width: 50%;
+            height: 500px;
+            background-color: brown;
+            border: 5px dotted white;
+        }
+        .classroom2{
+            width: 50%;
+            height: 100px;
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--BU DERSTE İÇ İÇE DİVİ GÖRECEĞİZ-->
+    <!--if you ask why we did this,here the answer:
+        we made sure you dont get confused about intertwined divs because when we define 
+    width of the second div its according to width of the first. DİD U GET İT?  
+    and the other point of this lesson is when you enlarge or reduce the size of page of
+    site if you prefer % to px, you will not be affect by this event.when i say event i mean
+    you will not face with half div window ,its gonna delarge or reduce when you delarge 
+    or reduce the page of site.its gonna happen at the same rate:) -->
+    <!--yani kısacası her div bulunduğu konteynerın yüzdesini kaplıyor.ilk div tüm sayfanınkine 
+    bağlı ikinci div ise(içindeyse)ilk divin genişliğine bağlı oluyor-->
+    <div class="classroom">
+        <div class="classroom2">
+            <span>burası iç div</span>
+
+        </div>
+    </div>
+
+</body>
+</html>

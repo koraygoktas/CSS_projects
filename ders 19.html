@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*sadece table deseydim sadece çerçeve kenarlarına çizgi çekecekti*/
+        table{
+            width: 100%;
+        }
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        #bilgiler th{
+            background-color:rgba(0, 0, 0, 0.379);
+            color: #fff;
+        }
+        #bilgiler tr:nth-child(even){
+            background-color: rgba(169, 169, 169, 0.127);
+        }
+        #bilgiler tr:nth-child(odd){
+            background-color: rgba(169, 169, 169, 0.414);
+        }
+        #bilgiler tr:hover{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <table id="bilgiler"><!--burada border="2" deyip çerçeve yapabilirsin ama bunu css özelliğini kullanarak 
+        yukarıda hemp border uzunluğunu hem rengini hem de türünü ifade ederek yapabiliriz -->
+        <tr>
+            <th>adı</th>
+            <th>yaşı</th>
+            <th>mesleği</th>
+        </tr>
+        <tr>
+            <td style="text-align: center;">koray</td>
+            <td style="text-align: center;">18</td>
+            <td style="text-align: center;">yazılım mühendisi</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">gülşah</td>
+            <td style="text-align: center;">20</td>
+            <td style="text-align: center;">sosyolog</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">kerim</td>
+            <td style="text-align: center;">29</td>
+            <td style="text-align: center;">endüstri mühendisi</td>
+        </tr>
+        <tr>
+            <td style="text-align: center;">kerem</td>
+            <td style="text-align: center;">30</td>
+            <td style="text-align: center;">borsacı</td>
+        </tr>
+    </table>
+</body>
+</html>
